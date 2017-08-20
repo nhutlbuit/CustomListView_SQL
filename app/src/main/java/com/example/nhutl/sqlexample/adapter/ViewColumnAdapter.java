@@ -1,6 +1,5 @@
 package com.example.nhutl.sqlexample.adapter;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nhutl.sqlexample.R;
-import com.example.nhutl.sqlexample.activity.MainActivity;
+import com.example.nhutl.sqlexample.activity.ListProduct;
 import com.example.nhutl.sqlexample.dto.Column;
 
 import java.util.List;
@@ -20,9 +19,9 @@ import java.util.List;
  */
 
 public class ViewColumnAdapter extends BaseAdapter {
-    private MainActivity context;
+    private ListProduct context;
 
-    public ViewColumnAdapter(MainActivity context, int layout, List<Column> columns) {
+    public ViewColumnAdapter(ListProduct context, int layout, List<Column> columns) {
         this.context = context;
         this.layout = layout;
         this.columns = columns;

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boom"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nhutl.sqlexample.activity.Part" >
+
+    
+        <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/custom_spin" />
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="94dp"
+            android:layout_toLeftOf="@+id/btn_dit2"
+            android:background="@drawable/custom_edittext"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_dit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edt"
+            android:background="@drawable/custom_button"
+            android:text="Fart in next 5s"
+            android:textColor="#FFFFFF" />
+
+         <Button
+             android:id="@+id/btn_ok"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignRight="@+id/edt"
+             android:layout_below="@+id/btn_dit2"
+             android:background="@drawable/custom_button"
+             android:text="OK"
+             android:textColor="#FF0000" />
+
+          <Button
+              android:id="@+id/btn_dit3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/btn_dit2"
+              android:layout_alignParentRight="true"
+              android:layout_alignTop="@+id/btn_ok"
+              android:background="@drawable/custom_button"
+              android:text="Fart in next 10s"
+              android:textColor="#FFFFFF" />
+
+          <TextView
+              android:id="@+id/txtVw"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/edt"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="20dp"
+              android:text=""
+              android:textColor="#0000FF"
+              android:textSize="40dp" />
+
+    </RelativeLayout>
+
+         <!--   <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" >
+
+                <com.google.ads.AdView
+                    android:id="@+id/ad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-5138386891075539/2065554406"
+                    ads:loadAdOnCreate="true"
+                    ads:testDevices="TEST_EMULATOR,TEST_DEVICE_ID_GOES_HERE" >
+                </com.google.ads.AdView>
+            </RelativeLayout>-->
+     
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.41"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.20"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.01"
+            android:background="#BBBBBB" >
+
+            <ImageButton
+                android:id="@+id/btnMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#BBBBBB"
+                android:src="@drawable/bookmark" />
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#BBBBBB"
+                android:src="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#BBBBBB"
+                android:scaleType="fitCenter"
+                android:src="@drawable/next" />
+
+            <ImageButton
+                android:id="@+id/btnSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="47dp"
+                android:layout_toLeftOf="@+id/btnMark"
+                android:background="#BBBBBB"
+                android:src="@drawable/btnsub" />
+
+            <ImageButton
+                android:id="@+id/btnPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="37dp"
+                android:layout_toRightOf="@+id/btnMark"
+                android:background="#BBBBBB"
+                android:src="@drawable/btnplus" />
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" >
+
+                <com.google.ads.AdView
+                    android:id="@+id/ad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/ads"
+                    ads:loadAdOnCreate="true"
+                    ads:testDevices="TEST_EMULATOR,TEST_DEVICE_ID_GOES_HERE" >
+
+                </com.google.ads.AdView>
+            </RelativeLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

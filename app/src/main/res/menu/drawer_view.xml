@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/add_action_icon"
+            android:title="List Product Activity" />
+        <item
+            android:id="@+id/nav_five_fragment"
+            android:icon="@drawable/bank_card_icon"
+            android:title="Part" />
+    </group>
+
+    <item android:title="Tool">
+        <menu>
+            <item
+                android:id="@+id/nav_first_fragment"
+                android:icon="@drawable/accidental_charge_icon"
+                android:title="Flash Light Fragment" />
+            <item
+                android:id="@+id/nav_third_fragment"
+                android:icon="@drawable/bank_card_icon"
+                android:title="Flash Light Activity" />
+            <item
+                android:id="@+id/nav_four_fragment"
+                android:icon="@drawable/bank_card_icon"
+                android:title="Lock Screen" />
+        </menu>
+    </item>
+
+    <item android:title="Truyện">
+        <menu>
+            <item
+                android:id="@+id/nav_xuxudungkhoc"
+                android:icon="@drawable/accidental_charge_icon"
+                android:title="Xu Xu Dung Khoc" />
+            <item
+                android:id="@+id/b"
+                android:icon="@drawable/bank_card_icon"
+                android:title="Flash Light Activity" />
+            <item
+                android:id="@+id/c"
+                android:icon="@drawable/bank_card_icon"
+                android:title="Lock Screen" />
+        </menu>
+    </item>
+
+
+</menu>
+

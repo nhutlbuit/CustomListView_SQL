@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nhutl.sqlexample.fragment.FlashLightFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/nen5"
+        >
+
+        <ToggleButton
+            android:id="@+id/btn_on_off"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/btntoggle_selector"
+            android:layout_centerInParent="true"
+            android:onClick="onToggleClicked"/>
+
+        <ImageButton
+            android:id="@+id/img_btncolor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_on_off"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/colors" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/nen5"
+     >
+
+        <ToggleButton
+            android:id="@+id/btn_on_off"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/btntoggle_selector"
+            android:layout_centerInParent="true"
+            android:onClick="onToggleClicked"/>
+
+        <ImageButton
+            android:id="@+id/img_btncolor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_on_off"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/colors" />
+
+         <!-- <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" >
+
+                <com.google.ads.AdView
+                    android:id="@+id/ad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-5138386891075539/1828222000"
+                    ads:loadAdOnCreate="true"
+                    ads:testDevices="TEST_EMULATOR,TEST_DEVICE_ID_GOES_HERE" >
+                </com.google.ads.AdView>
+            </RelativeLayout>-->
+
+           
+</RelativeLayout>

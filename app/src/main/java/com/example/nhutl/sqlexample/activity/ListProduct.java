@@ -1,5 +1,3 @@
-
-
 package com.example.nhutl.sqlexample.activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -7,6 +5,7 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +23,7 @@ import com.example.nhutl.sqlexample.dto.Column;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class ListProduct extends AppCompatActivity {
     ListView listView;
     private Context context;
     List<Column> listcolumns= new ArrayList<Column>();
@@ -35,17 +34,19 @@ public class MainActivity extends AppCompatActivity {
     Dialog dialog;
     Button btnAdd,btnCancel,btnUpdate,btnCancelUpdate;
     String valueCot2,valueCot3,valueCot4;
-
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.list_product);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         initialize();
     }
 
     private void initialize(){
-        dbHelper = new DBHelper(MainActivity.this);
+        dbHelper = new DBHelper(ListProduct.this);
         listView = (ListView) findViewById(R.id.listview);
         adapter = new ViewColumnAdapter(this,R.layout.item_row,listcolumns);
         listView.setAdapter(adapter);
@@ -62,13 +63,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.add_sanpham, menu);
+        toolbar.setTitle("List Product");
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.menuAdd){
-            dialogAdd();
+        switch (item.getItemId()) {
+            case R.id.menuAdd:
+                    dialogAdd();
+                break;
+            case android.R.id.home:
+                    this.finish();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -106,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 initData(dialog);
                 if("".equals(valueCot2) && "".equals(valueCot3) && "".equals(valueCot4)){
-                    Toast.makeText(MainActivity.this, "Please enter the value!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ListProduct.this, "Please enter the value!", Toast.LENGTH_SHORT).show();
                 }else{
                     /*Insert data to table SanPham*/
                     column = new Column(
@@ -176,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                 dbHelper.DeleteDataFromTableSanPham(column2);
                 /*Query all data from table SanPham*/
                 queryAllDataFromTbleSanPham();
-                Toast.makeText(MainActivity.this, "Deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListProduct.this, "Deleted", Toast.LENGTH_SHORT).show();
             }
         });
 
