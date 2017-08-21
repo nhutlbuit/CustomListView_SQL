@@ -4,11 +4,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_second_fragment"
-            android:icon="@drawable/add_action_icon"
+            android:icon="@drawable/category_ic"
             android:title="List Product Activity" />
         <item
             android:id="@+id/nav_five_fragment"
-            android:icon="@drawable/bank_card_icon"
+            android:icon="@drawable/fart"
             android:title="Part" />
     </group>
 
@@ -16,15 +16,15 @@
         <menu>
             <item
                 android:id="@+id/nav_first_fragment"
-                android:icon="@drawable/accidental_charge_icon"
+                android:icon="@drawable/tini"
                 android:title="Flash Light Fragment" />
             <item
                 android:id="@+id/nav_third_fragment"
-                android:icon="@drawable/bank_card_icon"
+                android:icon="@drawable/on"
                 android:title="Flash Light Activity" />
             <item
                 android:id="@+id/nav_four_fragment"
-                android:icon="@drawable/bank_card_icon"
+                android:icon="@drawable/lock"
                 android:title="Lock Screen" />
         </menu>
     </item>
@@ -33,16 +33,16 @@
         <menu>
             <item
                 android:id="@+id/nav_xuxudungkhoc"
-                android:icon="@drawable/accidental_charge_icon"
+                android:icon="@drawable/icon"
                 android:title="Xu Xu Dung Khoc" />
             <item
-                android:id="@+id/b"
-                android:icon="@drawable/bank_card_icon"
-                android:title="Flash Light Activity" />
+                android:id="@+id/nav_myLife"
+                android:icon="@drawable/icon"
+                android:title="My Life - My Daisy" />
             <item
-                android:id="@+id/c"
-                android:icon="@drawable/bank_card_icon"
-                android:title="Lock Screen" />
+                android:id="@+id/nav_maimailabaoxa"
+                android:icon="@drawable/icon"
+                android:title="Mai Mai la bao xa" />
         </menu>
     </item>
 

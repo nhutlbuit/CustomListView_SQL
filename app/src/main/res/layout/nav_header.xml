@@ -1,16 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="192dp"
-    android:background="?attr/colorPrimaryDark"
+    android:background="?attr/colorPrimary"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"
+    android:weightSum="10"
     android:gravity="bottom">
+
+    <ImageButton
+        android:id="@+id/imgcot6"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:scaleType="fitXY"
+        android:background="?attr/colorPrimary"
+        android:src="@drawable/user_man_male_profile" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Header"
+        android:layout_height="0dp"
+        android:text="  Lê Bá Nhựt"
+        android:layout_weight="2"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="nhutlbuit@gmail.com"
+        android:layout_weight="1"
         android:textColor="@android:color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 

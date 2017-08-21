@@ -115,6 +115,14 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
                 Intent XuXuDungKhoc = new Intent(this, XuXuDungKhoc.class);
                 startActivity(XuXuDungKhoc);
                 break;
+            case R.id.nav_myLife:
+                Intent myLife = new Intent(this, XuXuDungKhoc.class);
+                startActivity(myLife);
+                break;
+            case R.id.nav_maimailabaoxa:
+                Intent maiMaiLaBaoXa = new Intent(this, XuXuDungKhoc.class);
+                startActivity(maiMaiLaBaoXa);
+                break;
             default:
                 Toast.makeText(this, "Main menu", Toast.LENGTH_SHORT).show();
         }
